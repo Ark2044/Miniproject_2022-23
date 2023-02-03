@@ -240,16 +240,25 @@ section {
     text-decoration: underline;
 }
 
+
+/* css banner */
+section
+{
+    padding: 2rem 9%;
+}
+
+/* css banner */
+
+
 .home {
     border: 0px solid;
     display: flex;
     justify-content: center;
-    background: url(../image/banner-img.jpg) no-repeat;
+    background: url(../image/turfbanner.mp4);
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
     padding-bottom: 10rem;
-
 }
 
 .home .content {
@@ -258,9 +267,15 @@ section {
     width: 60rem;
 }
 
-.home .content h3 {
+.home .content video {
+    width: 60rem;
+    left: 35rem;
+    z-index: 0;
+  }
+
+.home .content h4 {
     color: var(--black);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .home .content h3 span {
@@ -274,6 +289,7 @@ section {
     padding: 1rem 0;
     line-height: 1.8;
 }
+
 
 /* features */
 .features .box-container {
@@ -378,18 +394,7 @@ section {
     color: orange;
     padding: .5rem 0;
 }
-
-
-
-
-
 /* popular turf */
-
-
-
-
-
-
 
 /* footer */
 .footer
@@ -478,7 +483,7 @@ section {
     }
 
     section {
-        padding: 2rem 9%;
+        padding: 2rem;
     }
 }
 

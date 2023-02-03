@@ -20,6 +20,8 @@ var db = mongoose.connection;
 db.on('error',()=>console.log("Error in Connecting to Database"));
 db.once('open',()=>console.log("Connected to Database"))
 
+
+
 app.post("/signup",(req,res)=>{
     var firstname = req.body.firstname;
     var lastname = req.body.lastname;
@@ -50,7 +52,7 @@ app.get("/",(req,res)=>{
         "Allow-access-Allow-Origin": '*'
     })
     return res.redirect('index.html');
-}).listen(3000);
+}).listen(5500);
 
 
-console.log("Listening on PORT 3000");
+console.log("Listening on PORT 5500");
