@@ -5,12 +5,13 @@ var mongoose = require("mongoose")
 const app = express()
 
 app.use(bodyParser.json())
-app.use(express.static('new'))
+app.use(express.static('/'))
 app.use(bodyParser.urlencoded({
     extended:true
 }))
 
-mongoose.connect('mongodb://localhost:27017/accountdb',{
+
+mongoose.connect('mongodb://127.0.0.1:27017/accountdb',{
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -49,7 +50,7 @@ app.post("/signup",(req,res)=>{
 
 app.get("/",(req,res)=>{
     res.set({
-        "Allow-access-Allow-Origin": '*'
+        "Allow-access-Allow-Origin": ''
     })
     return res.redirect('index.html');
 }).listen(5500);
