@@ -14,20 +14,23 @@
     <div class="signup-box">
         <h1>Sign Up</h1>
 
-        <form>
+        <form action="#" method="post">
             <label>First Name</label>
-            <input type="text">
+            <input name="first" type="text">
 
             <label>Last Name</label>
-            <input type="text">
+            <input name="last" type="text">
 
             <label>Email</label>
-            <input type="text">
+            <input name="mail" type="text">
 
             <label>Password</label>
-            <input type="password">
+            <input name="pass" type="password">
 
-            <input type="button" value="Sign Up" class="btn">
+            <label>Confirm Password</label>
+            <input name="cpass" type="password">
+
+            <input type="submit" value="Sign Up" class="btn">
         </form>
         <p>By clicking the Sign Up button, you agree to our<br> 
             <a href='#'>Terms and Conditions</a> and <a href='#'>privacy policy</a></p>

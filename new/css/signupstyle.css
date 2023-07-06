@@ -6,10 +6,27 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
+.btn {
+    width: 315px;
+    height: 35px;
+    margin-top: 20px;
+    border-color: black;
+    border-radius: 50px;
+    background: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: green;
+    color: greenyellow;
+}
+
 .signup-box
 {
     width: 360px;
-    height: 500px;
+    height: 550px;
     background-color: white;
     margin: auto;
     border-radius: 5px;
@@ -44,7 +61,7 @@ input
     outline: none;
 }
 
-input[type="button"]
+/* input[type="button"]
 {
     width: 315px;
     height: 35px;
@@ -61,7 +78,7 @@ input[type="button"]:hover
 {
     background: green;
     color: greenyellow;
-}
+} */
 
 p
 { 
